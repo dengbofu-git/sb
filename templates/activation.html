@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>达达商城::用户注册::邮箱激活</title>
+	<style>
+		html,body,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,input,select,table,tr,td,th{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			font-size:16px;
+			line-height: 1.8em;
+			font-family: 'Microsoft Yahei';
+		}
+		ul,ol{
+			list-style: none;
+		}
+		table{
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		#container{
+			width:96%;
+			margin:15px auto;
+		}
+		#slogan{
+			font-size:24px;
+			color: #900;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1 id="slogan">您好:{{ username }}</h1>
+		<p>欢迎您注册成为达达商城正式会员，我们将竭诚为您提供优质的产品和服务</p>
+		<p>请单击以下链接以完成用户激活</p>
+		<p><a href="http://127.0.0.1:8081/dadashop/templates/active.html?username={{username}}&code={{ code }}">http://127.0.0.1:8081/dadashop/templates/active.html?username={{ username }}&code={{ code }}</a></p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>如果链接不能点击，请复制地址到浏览器，然后直接打开。</p>
+        <p>激活将于三日后失效</p>
+		<p>如果这不是您的邮件，请忽略</p>
+	</div>
+</body>
+</html>
